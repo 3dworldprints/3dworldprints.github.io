@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi producto</title>
+	<style>
+		.producto {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+			max-width: 900px;
+			margin: 0 auto;
+		}
+		.imagen-producto {
+			flex-basis: 40%;
+			max-width: 400px;
+			margin-right: 30px;
+		}
+		.info-producto {
+			flex-basis: 50%;
+		}
+		.nombre-producto {
+			font-size: 28px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		.descripcion-producto {
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+		.color-producto {
+			margin-bottom: 20px;
+		}
+		.color-producto label {
+			font-size: 20px;
+			font-weight: bold;
+			margin-right: 10px;
+		}
+		.numero-referencia {
+			font-size: 18px;
+			color: #999;
+			margin-bottom: 20px;
+		}
+		.anadir-cesta {
+			display: inline-block;
+			background-color: #007bff;
+			color: #fff;
+			font-size: 18px;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="producto">
+		<div class="imagen-producto">
+			<img src="ruta-de-tu-imagen.jpg" alt="Mi producto">
+		</div>
+		<div class="info-producto">
+			<div class="nombre-producto">Nombre del producto</div>
+			<div class="descripcion-producto">
+				Descripción del producto aquí. Puedes utilizar tantas líneas como necesites.
+			</div>
+			<div class="color-producto">
+				<label for="seleccionador-color">Color:</label>
+				<select id="seleccionador-color">
+					<option value="rojo">Rojo</option>
+					<option value="azul">Azul</option>
+					<option value="verde">Verde</option>
+				</select>
+			</div>
+			<div class="numero-referencia">Ref: 00001</div>
+			<button class="anadir-cesta">Añadir a la cesta</button>
+		</div>
+	</div>
+</body>
+</html>
