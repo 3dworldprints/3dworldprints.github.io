@@ -182,13 +182,14 @@ header{
     font-weight: 900;
 }
 
-.info-product button{
+.info-product a button{
     border: none;
     background: none;
     background-color: #000;
     color: #fff;
     padding: 15px 10px;
     cursor: pointer;
+    width: 100%;
 }
 
 footer {
