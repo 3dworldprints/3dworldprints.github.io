@@ -1,109 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Volador manual</title>
-  <style>
-    body {
-      background-color: #f5f5f5;
-      font-family: Arial, sans-serif;
-    }
-
-    .producto {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 900px;
-      margin: 0 auto;
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    .imagen-producto {
-      flex-basis: 40%;
-      max-width: 400px;
-      margin-right: 30px;
-      margin-bottom: 20px;
-    }
-
-    .info-producto {
-      flex-basis: 27%;
-      margin-bottom: 20px;
-    }
-
-    .nombre-producto {
-      font-size: 28px;
-      font-weight: bold;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    .descripcion-producto {
-      font-size: 20px;
-      margin-bottom: 20px;
-      color: #666;
-    }
-
-    .color-producto {
-      margin-bottom: 20px;
-    }
-
-    .color-producto label {
-      font-size: 20px;
-      font-weight: bold;
-      margin-right: 10px;
-      color: #666;
-    }
-
-    .numero-referencia {
-      font-size: 18px;
-      color: #999;
-      margin-bottom: 20px;
-    }
-
-    .anadir-cesta {
-      display: inline-block;
-      background-color: #007bff;
-      color: #fff;
-      font-size: 18px;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      border: none;
-      text-transform: uppercase;
-      transition: background-color 0.3s ease;
-    }
-
-    .anadir-cesta:hover {
-      background-color: #0056b3;
-    }
-  </style>
-</head>
-<body>
-  <div class="producto">
-    <div class="imagen-producto">
-      <img src="https://raw.githubusercontent.com/3dworldprints/3dworldprints.github.io/main/featured_preview_cf716b36-1151-44a4-aa4a-3c641a1cc09a.jpg" alt="Mi producto">
+  <head>
+    <title>Producto</title>
+    <style>
+      .product-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .product-img {
+        width: 100%;
+        max-width: 600px;
+      }
+      
+      .product-info {
+        text-align: center;
+        margin: 20px 0;
+      }
+      
+      .product-title {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      .product-description {
+        margin-bottom: 10px;
+      }
+      
+      .product-color {
+        margin-bottom: 10px;
+      }
+      
+      .product-ref {
+        color: #999;
+        margin-bottom: 10px;
+      }
+      
+      .add-to-cart-btn {
+        background-color: #f5a623;
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      
+      .add-to-cart-btn:hover {
+        background-color: #f7b94e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product-container">
+      <img class="product-img" src="https://raw.githubusercontent.com/3dworldprints/3dworldprints.github.io/main/featured_preview_cf716b36-1151-44a4-aa4a-3c641a1cc09a.jpg" alt="Producto">
+      <div class="product-info">
+        <h1 class="product-title">Nombre del Producto</h1>
+        <p class="product-description">Descripción del producto</p>
+        <select class="product-color">
+          <option value="rojo">Rojo</option>
+          <option value="verde">Verde</option>
+          <option value="azul">Azul</option>
+        </select>
+        <p class="product-ref">Referencia: 12345</p>
+        <button class="add-to-cart-btn" data-id="1">Agregar al carrito</button>
+      </div>
     </div>
-    <div class="info-producto">
-      <div class="nombre-producto">Volador manual</div>
-      <div class="descripcion-producto">
-        Un volador es un juguete divertido y sencillo que se puede lanzar fácilmente por el aire. Está compuesto por un cuerpo ligero de plástico. En el extremo opuesto al cuerpo hay un tirador, que se sujeta con los dedos y se tira hacia la persona para generar la fuerza necesaria para lanzar el volador. Al lanzarlo, el volador adquiere velocidad y asciende en el aire, y al mismo tiempo, las alas ayudan a mantenerlo estable y en vuelo durante un tiempo limitado. Es un juguete clásico y divertido que puede ser utilizado tanto en interiores como en exteriores, y que a menudo es utilizado por niños y adultos por igual para jugar y entretenerse.
-</div>
-  <div class="color-producto">
-    <label for="selector-color">Color:</label>
-    <select id="selector-color">
-      <option value="rojo">Rojo</option>
-      <option value="azul">Azul</option>
-      <option value="verde">Verde</option>
-    </select>
-  </div>
-  <div class="numero-referencia">
-    Ref: <span class="gris-claro">00001</span>
-  </div>
-  <button class="anadir-cesta">Añadir a la cesta</button>
-</div>
-  </div>
-</body>
+  </body>
 </html>
